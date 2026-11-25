@@ -11,11 +11,14 @@
   "dependencies": {
     "@fontsource-variable/archivo": "^5.3.0",
     "@fontsource-variable/instrument-sans": "^5.3.0",
-<<<<<<< HEAD
+"dependencies": {
+    "@fontsource-variable/archivo": "^5.3.0",
+    "@fontsource-variable/instrument-sans": "^5.3.0",
     "@fontsource-variable/jetbrains-mono": "^5.3.0",
-=======
->>>>>>> 3eb25cd183f4fa59313fd3296435b812108e7679
     "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },    "next": "^16.4.6",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },
