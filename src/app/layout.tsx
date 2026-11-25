@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
-import "@fontsource-variable/archivo/wdth.css";
-import "@fontsource-variable/instrument-sans/wght.css";
-import "@fontsource-variable/jetbrains-mono/wght.css";
+import "@fontsource-variable/sora/wght.css";
+import "@fontsource-variable/inter/wght.css";
+import "@fontsource-variable/geist-mono/wght.css";
 import "./globals.css";
 import Link from "next/link";
 import Header from "@/components/Header";
