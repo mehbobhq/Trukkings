@@ -238,6 +238,11 @@ export const privacyPage = {
   meta: { title: "Privacy", description: "How Trukkings handles information you share with us." },
   title: "Privacy policy",
   updated: "December 1, 2026",
+  short: [
+    "We collect only what you give us (like your name, email and role) plus basic website usage.",
+    "We use it to reply to you and to run early access. We do not sell your personal information.",
+    "You can ask us to see, correct or delete your information at any time.",
+  ],
   sections: [
     { h: "Who we are", p: ["This policy explains how Trukkings Inc (\"Trukkings\", \"we\") handles information. You can reach us at the email address on our contact page."] },
     { h: "Information we collect", p: ["Information you give us, such as your name, email address, role, the regions you operate in and anything you write in our contact form.", "Technical information about how the website is used, such as pages visited and device type, if we enable analytics."] },
@@ -253,6 +258,11 @@ export const termsPage = {
   meta: { title: "Terms", description: "Terms for using the Trukkings website and early-access program." },
   title: "Terms of use",
   updated: "December 1, 2026",
+  short: [
+    "Trukkings is in early access, so features can change while we build.",
+    "You keep ownership of your information. We use it to run the service for you.",
+    "AI answers and drafts are there to help. Please review them before you rely on them.",
+  ],
   sections: [
     { h: "Using this website", p: ["By using this website you agree to these terms. If you do not agree, please do not use it."] },
     { h: "Early access", p: ["Trukkings is in early access. Features may change, be limited or be withdrawn, and the service is provided as is while we develop it."] },
@@ -260,7 +270,7 @@ export const termsPage = {
     { h: "Your content and records", p: ["You keep ownership of the information you provide. You give us permission to use it to operate and improve the service for you."] },
     { h: "AI assistant", p: ["The assistant's answers and drafts are provided to help you. Please review them before relying on them or sending them. You remain responsible for decisions made using them."] },
     { h: "Liability", p: ["To the extent permitted by law, Trukkings is not liable for indirect or consequential losses arising from use of the website or early-access service."] },
-    { h: "Governing law", p: ["These terms are governed by the laws of [GOVERNING LAW], and disputes will be handled in the courts of [JURISDICTION]."] },
+    { h: "Governing law", p: ["The governing law and the courts that handle disputes will be named here before the service leaves early access. Until then, write to us first and we will work with you to resolve any issue."] },
     { h: "Contact", p: ["Questions about these terms can be sent to the email address on our contact page."] },
   ],
 };

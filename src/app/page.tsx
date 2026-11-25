@@ -1,6 +1,8 @@
 import Link from "next/link";
 import HomeHero from "@/components/HomeHero";
-import { CardGrid, Compare, CtaBand, Eyebrow, FaqList, Section, Split, Stats, Steps, TrustGrid } from "@/components/Blocks";
+import HeroPanel from "@/components/HeroPanel";
+import LeakCheck from "@/components/LeakCheck";
+import { CardGrid, Compare, CtaBand, Eyebrow, FaqList, HiddenCost, Section, Split, Stats, Steps, TrustGrid } from "@/components/Blocks";
 import { ChatMock, Lifecycle } from "@/components/Mocks";
 import { Arrow } from "@/components/Icons";
 import { home } from "@/content/home";
@@ -15,21 +17,34 @@ export default function Page() {
     <>
       <HomeHero />
 
+      {/* 1. Name the problem they may not know they have */}
+      <Section eyebrow={home.hidden.eyebrow} title={home.hidden.title} intro={home.hidden.intro}>
+        <HiddenCost items={home.hidden.items} outro={home.hidden.outro} />
+      </Section>
+
+      {/* 2. Let them recognize it in their own week */}
+      <Section id="check" tone="paper" eyebrow={home.check.eyebrow} title={home.check.title} intro={home.check.intro}>
+        <LeakCheck items={home.check.items} />
+      </Section>
+
+      {/* 3. Explain why it keeps happening */}
       <Section eyebrow={home.problem.eyebrow} title={home.problem.title} intro={home.problem.intro}>
         <CardGrid cols={3} variant="rule" items={home.problem.items} />
       </Section>
 
+      {/* 4. Only now: the fix */}
       <Section tone="paper" eyebrow={home.platform.eyebrow} title={home.platform.title} intro={home.platform.intro}>
         <CardGrid cols={3} items={home.platform.items} darkLast linkLabel="Explore" />
       </Section>
 
-      <Section tone="night" eyebrow={home.lifecycle.eyebrow} title={home.lifecycle.title} intro={home.lifecycle.intro}>
-        <Lifecycle />
-        <div className="cta" style={{ marginTop: 40 }}>
-          <Link className="btn btn-primary" href="/how-it-works">
-            See each stage in detail <Arrow />
-          </Link>
-        </div>
+      <Section tone="night">
+        <Split eyebrow={home.demo.eyebrow} title={home.demo.title} text={home.demo.text} points={home.demo.points} visual={<HeroPanel />}>
+          <div className="cta" style={{ marginTop: 32 }}>
+            <Link className="btn btn-primary" href="/platform">
+              See the platform <Arrow />
+            </Link>
+          </div>
+        </Split>
       </Section>
 
       <Section eyebrow={home.compare.eyebrow} title={home.compare.title}>
@@ -41,6 +56,15 @@ export default function Page() {
 
       <Section tone="paper" eyebrow={home.who.eyebrow} title={home.who.title} intro={home.who.intro}>
         <CardGrid cols={4} variant="rule" items={home.who.items} linkLabel="Read more" />
+      </Section>
+
+      <Section tone="night" eyebrow={home.lifecycle.eyebrow} title={home.lifecycle.title} intro={home.lifecycle.intro}>
+        <Lifecycle />
+        <div className="cta" style={{ marginTop: 40 }}>
+          <Link className="btn btn-primary" href="/how-it-works">
+            See each stage in detail <Arrow />
+          </Link>
+        </div>
       </Section>
 
       <Section>

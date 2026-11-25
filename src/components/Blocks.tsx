@@ -122,6 +122,30 @@ export function Stats({ items }: { items: { value: string; unit: string; text: s
   );
 }
 
+/* ---------- hidden cost: what you see vs what is happening ---------- */
+
+export function HiddenCost({ items, outro }: { items: { sees: string; really: string }[]; outro?: string }) {
+  return (
+    <>
+      <div className="hidden-grid">
+        {items.map((it) => (
+          <div className="hidden-card" key={it.sees}>
+            <div className="sees">
+              <span>What it looks like</span>
+              <p>{it.sees}</p>
+            </div>
+            <div className="really">
+              <span>What&apos;s actually going on</span>
+              <p>{it.really}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      {outro && <p className="hidden-outro">{outro}</p>}
+    </>
+  );
+}
+
 /* ---------- trust grid ---------- */
 
 export function TrustGrid({ items, note }: { items: { icon: string; title: string; text: string }[]; note?: string }) {

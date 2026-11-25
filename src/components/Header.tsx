@@ -43,7 +43,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="wrap nav">
-        <Logo light />
+        <Logo />
         <nav aria-label="Primary" className="nav-links" ref={navRef}>
           <ul>
             {nav.map((item) => (

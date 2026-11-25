@@ -1,7 +1,13 @@
 import Link from "next/link";
 import { home } from "@/content/home";
 import { Arrow, Icon } from "./Icons";
-import HeroPanel from "./HeroPanel";
+
+const day = [
+  { t: "08:52", task: "Retyped a load from an email into the dispatch sheet", tag: "retyping" },
+  { t: "09:30", task: "Called to ask whether the rate confirmation was signed", tag: "chasing" },
+  { t: "10:05", task: "“Can Driver B take it?” Checked three places to find out", tag: "guessing" },
+  { t: "11:40", task: "Found the delivery proof in a driver's phone photos", tag: "chasing" },
+];
 
 export default function HomeHero() {
   const hero = home.hero;
@@ -23,18 +29,41 @@ export default function HomeHero() {
                 {hero.secondary.label}
               </Link>
             </div>
-            <ul className="chips" aria-label="What's inside">
+            <ul className="chips" aria-label="The gaps we remove">
               {hero.tags.map((t) => (
                 <li key={t}>{t}</li>
               ))}
             </ul>
           </div>
 
-          <HeroPanel />
+          <div className="panel dayplan" role="img" aria-label="Illustrative example of a morning spent on work around the freight instead of moving it">
+            <div className="panel-top">
+              <span className="dots" aria-hidden="true">
+                <i />
+                <i />
+                <i />
+              </span>
+              <span className="live">Where a Tuesday morning goes</span>
+            </div>
+            <ol className="daylist" aria-hidden="true">
+              {day.map((d) => (
+                <li key={d.t}>
+                  <time>{d.t}</time>
+                  <span>{d.task}</span>
+                  <em>{d.tag}</em>
+                </li>
+              ))}
+            </ol>
+            <div className="daysum" aria-hidden="true">
+              <span>4 tasks</span>
+              <b>0 loads moved</b>
+            </div>
+            <p className="note">Illustrative example. Does this look familiar?</p>
+          </div>
         </div>
       </div>
 
-      <section className="truststrip" aria-label="Our commitments">
+      <section className="truststrip" aria-label="Sound familiar?">
         <div className="wrap">
           <ul>
             {home.strip.map((s) => (

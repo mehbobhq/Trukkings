@@ -1,25 +1,51 @@
 export const home = {
   meta: {
-    title: "Freight, run smarter",
+    title: "Find what is slowing your freight down",
     description:
       "Trukkings brings a freight marketplace, carrier operations software and an AI freight assistant into one platform for carriers, drivers, shippers and brokers.",
   },
   hero: {
-    eyebrow: "Freight platform · early access",
-    headlineStart: "Move freight with",
-    headlineEmphasis: "fewer moving parts.",
+    eyebrow: "For carriers, drivers, shippers & brokers",
+    headlineStart: "The trucks aren't the slow part.",
+    headlineEmphasis: "Everything around them is.",
     subhead:
-      "Trukkings brings a freight marketplace, carrier operations software and an AI freight assistant into one place, so carriers, drivers, shippers and brokers spend less time chasing and more time moving.",
-    primary: { label: "Get early access", href: "/contact" },
-    secondary: { label: "See the platform", href: "/platform" },
-    tags: ["Freight marketplace", "Operations & TMS", "AI assistant"],
+      "Loads found in one place, planned in another, documented in a third. The retyping, the chasing and the \u201cwho knows?\u201d add up every single day, and most teams have stopped noticing. Trukkings makes it visible, then removes it.",
+    primary: { label: "Find where your day leaks", href: "#check" },
+    secondary: { label: "Get early access", href: "/contact" },
+    tags: ["Scattered tools", "Chasing paperwork", "Answers in people's heads"],
   },
   strip: [
-    { icon: "users", title: "People approve changes", text: "The assistant suggests. Your team decides." },
-    { icon: "eye", title: "Answers show sources", text: "See which records an answer came from." },
-    { icon: "history", title: "Reviewable history", text: "Every change on a record is logged." },
-    { icon: "lock", title: "Your records, your control", text: "Access you grant, data you can ask for." },
+    { icon: "doc", title: "\u201cCan you resend that rate con?\u201d", text: "A document living in someone's inbox." },
+    { icon: "users", title: "\u201cWhich driver is free Thursday?\u201d", text: "An answer living in someone's head." },
+    { icon: "eye", title: "\u201cDid the delivery proof ever come in?\u201d", text: "Proof living in a phone photo." },
+    { icon: "link", title: "\u201cWhy is this invoice still waiting?\u201d", text: "A gap between two tools." },
   ],
+  hidden: {
+    eyebrow: "What you don't see",
+    title: "You see a late invoice. Here's what's behind it.",
+    intro:
+      "Most freight problems show up as something else, which is why they're so hard to fix. Look underneath and the same few gaps keep turning up.",
+    items: [
+      { sees: "A truck sat empty on Thursday.", really: "Which trucks were free lived in a spreadsheet last touched on Monday. Nobody was wrong. The information was just somewhere else." },
+      { sees: "A delivery went out late.", really: "The driver's hours were running short, but that fact sat in a different place than the dispatch plan. Nobody connected the two in time." },
+      { sees: "An invoice is stuck.", really: "Delivery proof is a photo on a driver's phone. Billing is waiting, the driver forgot, and someone has to chase it." },
+      { sees: "A load was booked wrong.", really: "The same details were typed into three places. One typo or one outdated copy, and now there's a dispute to untangle." },
+    ],
+    outro: "None of these is a people problem. They are gaps between tools, and every gap is filled by someone retyping, forwarding, asking or remembering.",
+  },
+  check: {
+    eyebrow: "Quick check",
+    title: "How many of these happened this week?",
+    intro: "Tick what's true for you. No email, no sign-up. It just shows where the gaps are.",
+    items: [
+      "We typed the same load details into more than one place",
+      "Someone asked for a rate confirmation or delivery proof that already existed",
+      "A dispatcher asked a driver or colleague something the records should answer",
+      "We found out about a problem after it had already cost us",
+      "A document lived in email or a phone photo instead of on the load",
+      "We weren't sure which truck or driver was actually free",
+    ],
+  },
   stats: [
     { value: "1", unit: "record", text: "for every load, driver and truck, shared by every tool" },
     { value: "3", unit: "tools", text: "marketplace, operations and an AI assistant in one place" },
@@ -27,10 +53,10 @@ export const home = {
     { value: "4", unit: "roles", text: "carriers, drivers, shippers and brokers on the same picture" },
   ],
   problem: {
-    eyebrow: "The problem",
-    title: "Freight runs on too many tabs.",
+    eyebrow: "Why it keeps happening",
+    title: "It's not your people. It's the gaps between your tools.",
     intro:
-      "Loads on one screen, dispatch in a spreadsheet, paperwork in an inbox and answers in somebody's head. Every handoff between them is a chance to lose time, money or a load.",
+      "Freight software grew up as separate pieces: a load board here, a TMS there, a spreadsheet, an inbox. The real work of moving freight lives in the spaces between them.",
     items: [
       {
         title: "Scattered tools",
@@ -47,36 +73,42 @@ export const home = {
     ],
   },
   platform: {
-    eyebrow: "The platform",
-    title: "Three tools that used to be three tabs.",
+    eyebrow: "The fix",
+    title: "Close the gaps, don't add another tab.",
     intro:
-      "Trukkings connects them around one record for every load, driver and truck, so what you learn in one step carries into the next.",
+      "Trukkings connects finding, running and answering around one record for every load, driver and truck, so nothing has to be retyped, chased or remembered.",
     items: [
       {
         title: "Freight marketplace",
-        text: "Find loads that suit your equipment, lanes and schedule, and post freight you need moved. Shippers and brokers reach capacity. Carriers reach work.",
+        text: "Stop hunting across boards and phone calls. Search by equipment, lane and timing, or post freight and review interested carriers, on the same records as dispatch.",
         points: ["Search and filter by equipment, lane and timing", "Post loads and review interested carriers", "Clear terms before anyone commits"],
         href: "/marketplace",
-        tag: "01",
+        tag: "Fixes scattered tools",
         icon: "search",
       },
       {
         title: "Operations & TMS",
-        text: "Plan, dispatch and track every load from booking to paperwork. One record for each load, driver and truck, available to the people who need it.",
+        text: "Stop retyping and chasing. One dispatch board, load status from booked to delivered, and documents attached to the load they belong to.",
         points: ["Dispatch board for loads, drivers and equipment", "Load status from booked to delivered", "Documents attached to the load they belong to"],
         href: "/operations",
-        tag: "02",
+        tag: "Fixes chasing paperwork",
         icon: "board",
       },
       {
         title: "AI freight assistant",
-        text: "Ask in plain language. The assistant reads your loads, drivers and documents, answers operational questions and drafts the routine work, with you making the final call.",
+        text: "Stop asking around. Ask in plain language and it answers from your own records, shows its sources and drafts the routine work for your review.",
         points: ["Answers grounded in your own records", "Drafts messages and summaries for review", "Flags what's missing before it becomes a problem"],
         href: "/ai-assistant",
-        tag: "03",
+        tag: "Fixes answers in heads",
         icon: "chat",
       },
     ],
+  },
+  demo: {
+    eyebrow: "The same day, connected",
+    title: "One record, three views.",
+    text: "Find the load, plan the truck and ask the question without leaving the record. The marketplace, the dispatch board and the assistant all read the same facts.",
+    points: ["Change a detail once and everyone sees it", "Documents live on the load, not in an inbox", "Answers show the records they came from"],
   },
   lifecycle: {
     eyebrow: "How it works",
@@ -86,22 +118,22 @@ export const home = {
   },
   who: {
     eyebrow: "Who it's for",
-    title: "Built for everyone on the load.",
-    intro: "Freight only moves when carriers, drivers, shippers and brokers can work from the same picture.",
+    title: "Where it hurts depends on your seat.",
+    intro: "Same gaps, different pain. Here is how each side of the load feels it.",
     items: [
       {
         title: "Carriers & fleets",
-        text: "Fill trucks, dispatch with confidence and keep every load's records in one place as the fleet grows.",
+        text: "Trucks sit empty, dispatch lives in spreadsheets and paperwork follows you home. Fill trucks and keep every load's records in one place.",
         href: "/solutions/carriers",
       },
       {
         title: "Owner-operators & drivers",
-        text: "Find work that fits your truck and your schedule, and keep your own trips and paperwork organized.",
+        text: "You are the driver, dispatcher and bookkeeper. Find work that fits your truck and keep trips and paperwork organized without extra hours.",
         href: "/solutions/owner-operators",
       },
       {
         title: "Shippers & brokers",
-        text: "Post freight, reach capable carriers and follow each shipment without a trail of calls and emails.",
+        text: "You post freight, then chase calls and emails to learn where it is. Reach capable carriers and follow each shipment in one place.",
         href: "/solutions/shippers-brokers",
       },
       {
@@ -170,8 +202,8 @@ export const home = {
     note: "We are in early access. Security and compliance details, including any certifications, will be published here as they are earned, not before.",
   },
   compare: {
-    eyebrow: "Why one platform",
-    title: "What changes when it's all connected.",
+    eyebrow: "Before and after",
+    title: "What changes when the gaps close.",
   },
   access: {
     eyebrow: "Early access",
@@ -185,8 +217,8 @@ export const home = {
     ],
   },
   cta: {
-    title: "Be one of the first on the platform.",
-    text: "We're onboarding a small number of carriers, drivers, shippers and brokers. Tell us how you move freight and we'll be in touch.",
+    title: "Find out where your day is leaking.",
+    text: "Tell us how you move freight. We'll show you where the gaps are and whether Trukkings fits, with no sales script.",
     primary: { label: "Get early access", href: "/contact" },
     secondary: { label: "Read the FAQ", href: "/faq" },
   },

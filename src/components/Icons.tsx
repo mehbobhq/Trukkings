@@ -103,8 +103,8 @@ export function Icon({ name }: { name: string }) {
 export function Check() {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" className="check">
-      <rect width="24" height="24" rx="7" fill="#FF7939" />
-      <path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#0A0F16" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+      <rect width="24" height="24" rx="7" fill="#2D4FFF" />
+      <path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#FFFFFF" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }
