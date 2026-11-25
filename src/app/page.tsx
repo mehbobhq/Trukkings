@@ -1,18 +1,11 @@
 import Link from "next/link";
 import HomeHero from "@/components/HomeHero";
-<<<<<<< HEAD
 import { CardGrid, Compare, CtaBand, Eyebrow, FaqList, Section, Split, Stats, Steps, TrustGrid } from "@/components/Blocks";
 import { ChatMock, Lifecycle } from "@/components/Mocks";
 import { Arrow } from "@/components/Icons";
 import { home } from "@/content/home";
 import { faqPage } from "@/content/company";
 import { platformPage } from "@/content/platform";
-=======
-import { CardGrid, CtaBand, Section, Split } from "@/components/Blocks";
-import { ChatMock, Lifecycle } from "@/components/Mocks";
-import { Arrow } from "@/components/Icons";
-import { home } from "@/content/home";
->>>>>>> 3eb25cd183f4fa59313fd3296435b812108e7679
 import { pageMeta } from "@/lib/meta";
 
 export const metadata = pageMeta(home.meta.title, home.meta.description, "/");
@@ -39,7 +32,6 @@ export default function Page() {
         </div>
       </Section>
 
-<<<<<<< HEAD
       <Section eyebrow={home.compare.eyebrow} title={home.compare.title}>
         <Stats items={home.stats} />
         <div style={{ marginTop: 40 }}>
@@ -52,13 +44,6 @@ export default function Page() {
       </Section>
 
       <Section>
-=======
-      <Section eyebrow={home.who.eyebrow} title={home.who.title} intro={home.who.intro}>
-        <CardGrid cols={4} variant="rule" items={home.who.items} linkLabel="Read more" />
-      </Section>
-
-      <Section tone="paper">
->>>>>>> 3eb25cd183f4fa59313fd3296435b812108e7679
         <Split
           eyebrow={home.assistant.eyebrow}
           title={home.assistant.title}
@@ -74,18 +59,14 @@ export default function Page() {
         </Split>
       </Section>
 
-<<<<<<< HEAD
       <Section tone="night" eyebrow={home.trust.eyebrow} title={home.trust.title} intro={home.trust.intro}>
         <TrustGrid items={home.trust.items} note={home.trust.note} />
       </Section>
 
-=======
->>>>>>> 3eb25cd183f4fa59313fd3296435b812108e7679
       <Section eyebrow={home.principles.eyebrow} title={home.principles.title}>
         <CardGrid cols={3} variant="rule" items={home.principles.items} />
       </Section>
 
-<<<<<<< HEAD
       <Section tone="paper" eyebrow={home.access.eyebrow} title={home.access.title} intro={home.access.intro}>
         <Steps items={home.access.items} />
       </Section>
@@ -106,8 +87,6 @@ export default function Page() {
         </div>
       </Section>
 
-=======
->>>>>>> 3eb25cd183f4fa59313fd3296435b812108e7679
       <CtaBand {...home.cta} />
     </>
   );

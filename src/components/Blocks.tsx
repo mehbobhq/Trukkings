@@ -1,9 +1,5 @@
 import Link from "next/link";
-<<<<<<< HEAD
 import { Arrow, Check, Icon } from "./Icons";
-=======
-import { Arrow, Check } from "./Icons";
->>>>>>> 3eb25cd183f4fa59313fd3296435b812108e7679
 
 /* ---------- small helpers ---------- */
 
@@ -107,7 +103,6 @@ export function Section({
 
 /* ---------- cards ---------- */
 
-<<<<<<< HEAD
 export type CardItem = { title: string; text: string; points?: string[]; href?: string; tag?: string; icon?: string };
 
 /* ---------- stats row ---------- */
@@ -147,9 +142,6 @@ export function TrustGrid({ items, note }: { items: { icon: string; title: strin
     </>
   );
 }
-=======
-export type CardItem = { title: string; text: string; points?: string[]; href?: string; tag?: string };
->>>>>>> 3eb25cd183f4fa59313fd3296435b812108e7679
 
 export function CardGrid({
   items,
@@ -170,14 +162,11 @@ export function CardGrid({
         const cls = variant === "rule" ? "rule-card" : `card${darkLast && i === items.length - 1 ? " card-dark" : ""}`;
         const body = (
           <>
-<<<<<<< HEAD
             {it.icon && (
               <span className="icon-tile">
                 <Icon name={it.icon} />
               </span>
             )}
-=======
->>>>>>> 3eb25cd183f4fa59313fd3296435b812108e7679
             {it.tag && <span className="num">{it.tag}</span>}
             <h3>{it.title}</h3>
             <p>{it.text}</p>

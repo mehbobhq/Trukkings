@@ -10,11 +10,7 @@ export default function SolutionPage({ s }: { s: Solution }) {
         eyebrow={s.hero.eyebrow}
         title={s.hero.title}
         lede={s.hero.lede}
-<<<<<<< HEAD
         crumbs={[{ label: "Solutions", href: "/solutions" }, { label: s.hero.eyebrow.replace("For ", "").replace(/^./, (c) => c.toUpperCase()) }]}
-=======
-        crumbs={[{ label: "Solutions", href: "/solutions" }, { label: s.hero.eyebrow.replace("For ", "") }]}
->>>>>>> 3eb25cd183f4fa59313fd3296435b812108e7679
         actions={[
           { label: "Get early access", href: "/contact", variant: "primary" },
           { label: "See the platform", href: "/platform", variant: "ghost" },

@@ -14,7 +14,6 @@ export const home = {
     secondary: { label: "See the platform", href: "/platform" },
     tags: ["Freight marketplace", "Operations & TMS", "AI assistant"],
   },
-<<<<<<< HEAD
   strip: [
     { icon: "users", title: "People approve changes", text: "The assistant suggests. Your team decides." },
     { icon: "eye", title: "Answers show sources", text: "See which records an answer came from." },
@@ -27,8 +26,6 @@ export const home = {
     { value: "5", unit: "stages", text: "from finding a load to a billing-ready close-out" },
     { value: "4", unit: "roles", text: "carriers, drivers, shippers and brokers on the same picture" },
   ],
-=======
->>>>>>> 3eb25cd183f4fa59313fd3296435b812108e7679
   problem: {
     eyebrow: "The problem",
     title: "Freight runs on too many tabs.",
@@ -61,10 +58,7 @@ export const home = {
         points: ["Search and filter by equipment, lane and timing", "Post loads and review interested carriers", "Clear terms before anyone commits"],
         href: "/marketplace",
         tag: "01",
-<<<<<<< HEAD
         icon: "search",
-=======
->>>>>>> 3eb25cd183f4fa59313fd3296435b812108e7679
       },
       {
         title: "Operations & TMS",
@@ -72,10 +66,7 @@ export const home = {
         points: ["Dispatch board for loads, drivers and equipment", "Load status from booked to delivered", "Documents attached to the load they belong to"],
         href: "/operations",
         tag: "02",
-<<<<<<< HEAD
         icon: "board",
-=======
->>>>>>> 3eb25cd183f4fa59313fd3296435b812108e7679
       },
       {
         title: "AI freight assistant",
@@ -83,10 +74,7 @@ export const home = {
         points: ["Answers grounded in your own records", "Drafts messages and summaries for review", "Flags what's missing before it becomes a problem"],
         href: "/ai-assistant",
         tag: "03",
-<<<<<<< HEAD
         icon: "chat",
-=======
->>>>>>> 3eb25cd183f4fa59313fd3296435b812108e7679
       },
     ],
   },
@@ -166,7 +154,6 @@ export const home = {
       },
     ],
   },
-<<<<<<< HEAD
   trust: {
     eyebrow: "Trust & control",
     title: "Built so you can check its work.",
@@ -197,8 +184,6 @@ export const home = {
       { title: "Shape what we build next", text: "Your feedback decides the roadmap. Early participants hear about pricing first." },
     ],
   },
-=======
->>>>>>> 3eb25cd183f4fa59313fd3296435b812108e7679
   cta: {
     title: "Be one of the first on the platform.",
     text: "We're onboarding a small number of carriers, drivers, shippers and brokers. Tell us how you move freight and we'll be in touch.",

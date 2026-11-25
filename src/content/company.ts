@@ -237,15 +237,9 @@ export const contactPage = {
 export const privacyPage = {
   meta: { title: "Privacy", description: "How Trukkings handles information you share with us." },
   title: "Privacy policy",
-<<<<<<< HEAD
   updated: "December 1, 2026",
   sections: [
     { h: "Who we are", p: ["This policy explains how Trukkings Inc (\"Trukkings\", \"we\") handles information. You can reach us at the email address on our contact page."] },
-=======
-  updated: "[EFFECTIVE DATE]",
-  sections: [
-    { h: "Who we are", p: ["This policy explains how [LEGAL ENTITY NAME] (\"Trukkings\", \"we\") handles information. You can reach us at the email address on our contact page."] },
->>>>>>> 3eb25cd183f4fa59313fd3296435b812108e7679
     { h: "Information we collect", p: ["Information you give us, such as your name, email address, role, the regions you operate in and anything you write in our contact form.", "Technical information about how the website is used, such as pages visited and device type, if we enable analytics."] },
     { h: "How we use it", p: ["To respond to your requests, run the early-access program, improve our website and product, and keep our services secure.", "We do not sell your personal information."] },
     { h: "Sharing", p: ["We share information only with service providers who help us run the website and communications, when the law requires it, or with your permission."] },
@@ -258,11 +252,7 @@ export const privacyPage = {
 export const termsPage = {
   meta: { title: "Terms", description: "Terms for using the Trukkings website and early-access program." },
   title: "Terms of use",
-<<<<<<< HEAD
   updated: "December 1, 2026",
-=======
-  updated: "[EFFECTIVE DATE]",
->>>>>>> 3eb25cd183f4fa59313fd3296435b812108e7679
   sections: [
     { h: "Using this website", p: ["By using this website you agree to these terms. If you do not agree, please do not use it."] },
     { h: "Early access", p: ["Trukkings is in early access. Features may change, be limited or be withdrawn, and the service is provided as is while we develop it."] },
