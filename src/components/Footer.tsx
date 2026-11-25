@@ -8,7 +8,11 @@ export default function Footer() {
       <div className="wrap">
         <div className="foot-top">
           <div className="foot-brand">
+<<<<<<< HEAD
             <Logo light />
+=======
+            <Logo />
+>>>>>>> 3eb25cd183f4fa59313fd3296435b812108e7679
             <p>One platform for finding freight, running it and getting answers about it.</p>
             <a className="foot-mail" href={`mailto:${site.contactEmail}`}>
               {site.contactEmail}
@@ -33,9 +37,13 @@ export default function Footer() {
           <p>
             © {new Date().getFullYear()} {site.name}. All rights reserved.
           </p>
+<<<<<<< HEAD
           <p className="live">
             <span className="pulse" aria-hidden="true" /> Early access open
           </p>
+=======
+          <p>Early access</p>
+>>>>>>> 3eb25cd183f4fa59313fd3296435b812108e7679
         </div>
       </div>
     </footer>
