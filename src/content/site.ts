@@ -58,7 +58,6 @@ export const footerColumns: { title: string; links: NavChild[] }[] = [
       { label: "Carriers & fleets", href: "/solutions/carriers" },
       { label: "Owner-operators & drivers", href: "/solutions/owner-operators" },
       { label: "Shippers & brokers", href: "/solutions/shippers-brokers" },
-      { label: "How it works", href: "/how-it-works" },
     ],
   },
   {
@@ -66,17 +65,22 @@ export const footerColumns: { title: string; links: NavChild[] }[] = [
     links: [
       { label: "About", href: "/about" },
       { label: "Partners & investors", href: "/partners" },
-      { label: "FAQ", href: "/faq" },
       { label: "Contact", href: "/contact" },
     ],
   },
   {
-    title: "Legal",
+    title: "Resources",
     links: [
-      { label: "Privacy", href: "/privacy" },
-      { label: "Terms", href: "/terms" },
+      { label: "How it works", href: "/how-it-works" },
+      { label: "FAQ", href: "/faq" },
+      { label: "Request early access", href: "/contact" },
     ],
   },
+];
+
+export const legalLinks: NavChild[] = [
+  { label: "Privacy", href: "/privacy" },
+  { label: "Terms", href: "/terms" },
 ];
 
 export const allPaths = [
